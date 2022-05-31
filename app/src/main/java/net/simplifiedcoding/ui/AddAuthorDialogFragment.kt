@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.dialog_fragment_add_author.*
 import net.simplifiedcoding.R
@@ -21,7 +22,7 @@ class AddAuthorDialogFragment : DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProviders.of(this).get(AuthorsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(AuthorsViewModel::class.java)
         return inflater.inflate(R.layout.dialog_fragment_add_author, container, false)
     }
 

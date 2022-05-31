@@ -1,6 +1,7 @@
 package net.simplifiedcoding.data
 
-import com.google.firebase.database.Exclude
+
+import com.google.firebase.firestore.Exclude
 import kotlin.random.Random
 
 private val cities = listOf("Bangalore", "Mumbai", "Ranchi", "Kolkata", "Hyderabad", "Pune")
